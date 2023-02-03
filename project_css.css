@@ -1,5 +1,5 @@
 /* CSS */
-html{background-color: rgb(255, 111, 97);}
+html{background-image: url("https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-124672.jpg?w=900&t=st=1675445962~exp=1675446562~hmac=0cbd0bd138031d7e30d16fffca9eab437a0f219c829c25f6d3f1c394ed512738");}
 .buttons{
   align-items: center;
   appearance: none;
@@ -31,7 +31,9 @@ html{background-color: rgb(255, 111, 97);}
   font-size: 18px;
 
 }
-
+h1{
+  color: white;
+}
 .buttons:focus {
   box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
@@ -46,10 +48,11 @@ html{background-color: rgb(255, 111, 97);}
   transform: translateY(2px);
 }
 .box {
+  background-image: url("https://wallpaperaccess.com/full/1428481.jpg");
   float: left;
   padding: 1.5em 1em;
   width: 25%;
-  height: 400px;
+  height: auto;
   border-top: .1em solid $lightGrey;
   border-bottom: .1em solid $lightGrey;
   border-left: .1em solid $lightGrey;
@@ -61,12 +64,15 @@ h1 {font-size: 2em;}
 p {font-size: 1.25em;}
 }
 .box:last-child {border-right: .1em solid $lightGrey;}
-.box h1 {text-align: center;}
+.box h1 {
+  text-align: center;
+  color: white;
+}
 .box p {
   margin-top: 4em;
   height: 6em;
   text-align: justify;
-  color:green;
+  color:white;
 }
 section {margin: 1em 0;}
 hr {
@@ -86,6 +92,9 @@ margin-top: 30px;
   .heading{font-size: 90px;
           text-align: center;
       }
+      .buttons{
+        margin-left:25px;
+      }
       a:link {
   color: black;
   background-color: transparent;
@@ -99,37 +108,15 @@ a:visited {
 a:hover {
   color: black;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
   color: black;
   background-color: transparent;
-  text-decoration: underline;
-}
-body.dark-mode{
-  background-color: black;
-  color: white; 
-}
-.btn {
-  position: relative;
-  background: linear-gradient(-90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #EE7752);
-  background-size: 400% 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  height: 28px;
-  box-sizing: border-box;
-  font-size: 13px;
-  letter-spacing: 1px;
-  padding-left: 16px;
-  padding-right: 16px; 
-  margin: 0;
-  animation: Gradient 4s ease infinite;
   text-decoration: none;
 }
+
 
 
 
@@ -140,23 +127,8 @@ body.dark-mode{
   }
 }
 
-.btn::after {
-  content: '';
-  position: absolute;
-  background-size: inherit;
-  background-image: inherit;
-  animation: inherit;
-  left: 0px;
-  right: 0px;
-  top: 2px;
-  height: 100%;
-  filter: blur(1rem);
-}
-.btn:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
 @media screen and (max-width: 640px) {
+  html{background: black;}
   .header {
     display: flex;
     flex-direction: column;
@@ -191,14 +163,14 @@ body.dark-mode{
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 10px;
-  margin-top: 110px;
+  margin-top: 40px;
   z-index: 3;
   }
   .box {
   float: left;
   padding: 1.5em 1em;
   width: 50%;
-  height: 50%;
+  height: auto;
   border-top: .1em solid $lightGrey;
   border-bottom: .1em solid $lightGrey;
   border-left: .1em solid $lightGrey;
@@ -213,7 +185,5 @@ p {font-size: 1.25em;}
 .heading{
   font-size: 40px;
 }
-.btn{
-  margin-left: 30px;
 }
-}
+
